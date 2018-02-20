@@ -1,0 +1,16 @@
+C:\Users\Allen\Source\repos\StorageQueueAzure\StorageQueueAzure\bin\Debug\StorageQueueAzure.exe.config
+C:\Users\Allen\Source\repos\StorageQueueAzure\StorageQueueAzure\bin\Debug\StorageQueueAzure.exe
+C:\Users\Allen\Source\repos\StorageQueueAzure\StorageQueueAzure\bin\Debug\StorageQueueAzure.pdb
+C:\Users\Allen\Source\repos\StorageQueueAzure\StorageQueueAzure\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\Allen\Source\repos\StorageQueueAzure\StorageQueueAzure\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Allen\Source\repos\StorageQueueAzure\StorageQueueAzure\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Allen\Source\repos\StorageQueueAzure\StorageQueueAzure\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Allen\Source\repos\StorageQueueAzure\StorageQueueAzure\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\Allen\Source\repos\StorageQueueAzure\StorageQueueAzure\bin\Debug\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\Allen\Source\repos\StorageQueueAzure\StorageQueueAzure\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\Allen\Source\repos\StorageQueueAzure\StorageQueueAzure\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Allen\Source\repos\StorageQueueAzure\StorageQueueAzure\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Allen\Source\repos\StorageQueueAzure\StorageQueueAzure\obj\Debug\StorageQueueAzure.csprojResolveAssemblyReference.cache
+C:\Users\Allen\Source\repos\StorageQueueAzure\StorageQueueAzure\obj\Debug\StorageQueueAzure.csproj.CoreCompileInputs.cache
+C:\Users\Allen\Source\repos\StorageQueueAzure\StorageQueueAzure\obj\Debug\StorageQueueAzure.exe
+C:\Users\Allen\Source\repos\StorageQueueAzure\StorageQueueAzure\obj\Debug\StorageQueueAzure.pdb
