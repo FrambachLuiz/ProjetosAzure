@@ -15,6 +15,36 @@ namespace StorageQueueAzure
     {
         private static void Main(string[] args)
         {
+            var generalWatcher = Stopwatch.StartNew();
+
+            var storageAccount =
+                CloudStorageAccount.Parse(ConfigurationManager.AppSettings["StorageConnectionString"]);
+
+            var storageClient = storageAccount.CreateCloudQueueClient();
+
+
+            var cloudQueue = storageClient.GetQueueReference("stresstest");
+
+            var i = 0;
+
+            while (true)
+            {
+                var watcher = Stopwatch.StartNew();
+
+                var cloudQueueMessage = new CloudQueueMessage("{\"PaymentId\":\"492d1012-52b4-4e11-99bc-579636fcf57e\",\"ChangeType\":1} ");
+                cloudQueue.AddMessageAsync(cloudQueueMessage);
+
+                Console.WriteLine("Adicionado linha: "+ i++);
+                Console.WriteLine("Executado no tempo de: " + watcher.Elapsed);
+                Console.WriteLine("TOTAL: " + generalWatcher.ElapsedMilliseconds + "ms");
+                Console.WriteLine("");
+
+                Thread.Sleep(100);
+            }
+        }
+
+        private static void Main2(string[] args)
+        {
             var storageAccount =
                 CloudStorageAccount.Parse(ConfigurationManager.AppSettings["StorageConnectionString"]);
 
