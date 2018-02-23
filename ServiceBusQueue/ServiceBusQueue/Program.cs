@@ -8,10 +8,17 @@ namespace ServiceBusQueue
     {
         private static void Main(string[] args)
         {
-            var serviceConnectionString =
+            var connectionString =
                 ConfigurationManager.AppSettings["Microsoft.ServiceBus.ConnectionString"];
 
-            var queueClient = QueueClient.CreateFromConnectionString(serviceConnectionString); ;
+            ServiceBusSendToTopic(connectionString);
+
+            Console.Read();
+        }
+
+        public static void ServiceBusSendToQueue(string connectionString)
+        {
+            var queueClient = QueueClient.CreateFromConnectionString(connectionString, "testequeue"); ;
 
             var i = 1;
 
@@ -26,8 +33,25 @@ namespace ServiceBusQueue
 
                 Console.WriteLine(menssage.ContentType + " enviada com sucesso!");
             }
+        }
 
-            Console.Read();
+        public static void ServiceBusSendToTopic(string connectionString)
+        {
+            var topicClient = TopicClient.CreateFromConnectionString(connectionString, "topictest");
+
+            var i = 1;
+
+            //Sending Messages
+            while (true)
+            {
+                var menssage = new BrokeredMessage();
+
+                menssage.ContentType = "mensagem " + i++;
+
+                topicClient.Send(menssage);
+
+                Console.WriteLine(menssage.ContentType + " enviada com sucesso!");
+            }
         }
     }
 }
