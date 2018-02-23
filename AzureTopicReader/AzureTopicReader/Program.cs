@@ -25,8 +25,9 @@ namespace AzureTopicReader
             while (true)
             {
                 var menssage = topiClient.Receive();
+                topiClient.Complete(menssage.LockToken);
 
-                Console.WriteLine(menssage.ContentType + " enviada com sucesso!");
+                Console.WriteLine(menssage.ContentType + " recebida com sucesso!");
             }
         }
     }
